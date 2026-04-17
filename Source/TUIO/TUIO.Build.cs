@@ -29,7 +29,9 @@ public class TUIO : ModuleRules
                 "CoreUObject",
                 "Engine",
 				"TUIO11",
-				"Projects"
+				"Projects",
+				"Sockets",
+				"Networking"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -38,6 +40,8 @@ public class TUIO : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
+				"Slate",
+				"SlateCore"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
